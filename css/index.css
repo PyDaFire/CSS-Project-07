@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka One";
+}
+
+body{
+    width: 90vw;
+    margin: auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+
+
+.nav-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50vw;
+    margin-left: 2rem;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight:lighter;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.nav-items h5:hover{
+    color: #FE5E35;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.intro-section{
+    display: flex;
+}
+.left-section{
+    width: 50vw;
+}
+
+.left-section h3{
+    font-size: 2rem;
+    font-family: "Poppins";
+    margin: 2rem 0;
+}
+
+.left-section h3 img{
+    width: 2rem;
+}
+
+.left-section h1{
+    font-size: 3.5rem;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+.sub-headlines{
+    margin: 2rem;
+}
+.sub-headline img{
+    width: 1.6rem;
+    background-color: #FE5E35;
+    border-radius: 50%;
+    padding: 4px;
+    margin-right: inherit;
+}
+.sub-headline{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    
+}
+
+.sub-headline h5 img{
+    margin-right: 15px;
+}
+
+.text{
+    color: rgb(153, 153, 153);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .7rem;
+    font-weight: normal;
+}
+
+.action-btns{
+    margin-top: 2rem;
+}
+
+.action-btn{
+    background-color: #FE5E35;
+    padding: .8rem 1.6rem;
+    color: #ffffff;
+    border-radius: 30px;
+    border-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin-right: 3%;
+}
+
+.right-section{
+    position: relative;
+    width: 40vw;
+}
+
+.headphone-div {
+    position: absolute;
+}
+
+.discount-content{
+    position: absolute;
+    top: 37vh;
+    color: #ffffff  ;
+}
+
+.discount-content h1{
+    font-size: 2.5rem;
+}
+.headphone-div img.discount{
+    position: absolute;
+    top: 32vh;
+    width: 10vw;
+    left: -29px;
+}
+
+.headphone-div img:nth-child(3){
+    position: absolute;
+    width: 27vw;
+    top:0%;
+    left: 2vw;
+    z-index: -1;
+}
+
+.right-section .action-btn{
+    position: absolute;
+    top:67vh;
+    left: 10vw;
+}
+.dots{
+    display: flex;
+    position: absolute;
+    top: 57vh;
+    left: 10vw;
+    width: 10vw;
+    justify-content: space-between;
+}
+.dot{
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    background-color: #FE5E35  ;
+    
+}
+.dot:nth-child(1){
+    background-color: yellow;
+}
+.dot:nth-child(3){
+    background-color: black;
+}
+
+/* ----------------Media Queries----------------- */
+@media (max-width: 541px) { 
+
+}
+
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 650px) { 
+    .intro-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-section{
+     margin-bottom: 10%;   
+    }
+
+    .dots {
+        top: 40vh;
+        left: 14vw;
+      }
+      .right-section .action-btn {
+        top: 47vh;
+        left: 7vw;
+      }
+      .action-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20vh;
+      }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .nav-items{
+        display: none;
+    }
+    .discount-content{  
+        display: none;
+    }
+    .headphone-div img.discount{
+        display: none;
+    }
+    .headphone-div img:nth-child(3){
+        width: 35vw;
+    }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 1011px) {  
+    .discount-content{  
+        top: 30vh;
+    }
+    .headphone-div img.discount{
+        top: 25vh;
+    }
+    
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1260px) {
+    .left-section{
+        width: 60vw;
+    }
+    .intro-section .left-section h1{
+        font-size: 3rem;
+    }
+    .discount-content h4{
+        margin-left: -10px;
+        
+        font-size: 1.5vw;
+    }
+    .discount-content h1{
+        font-size: 2.5vw;
+    }
+ }
+
+
